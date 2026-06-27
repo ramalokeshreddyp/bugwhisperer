@@ -83,7 +83,7 @@ export const explainError = createServerFn({ method: "POST" })
 
     if (!model) {
       if (process.env.GEMINI_API_KEY) {
-        model = "gemini-1.5-flash";
+        model = "gemini-3-flash-preview";
       } else if (process.env.OPENAI_API_KEY) {
         model = "gpt-4o-mini";
       } else {
